@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import ClerkHeader from "@/components/ui/headers/clerk-header";
-import { BanknoteArrowUp, Group, BanknoteIcon, AlertCircle, Mail, Phone, Link, SlashIcon, Filter, Plus, Search } from "lucide-react";
+import { BanknoteArrowUp, Group, BanknoteIcon, AlertCircle, Plus } from "lucide-react";
 import { useState } from "react";
 
 export default function MembersPage() {

@@ -1,4 +1,3 @@
-import AdminSidebar from "@/components/ui/sidebar/clerk_sidebar"
 import TreasurerSidebar from "@/components/ui/sidebar/treasure_sidebar"
 
 

@@ -13,12 +13,12 @@ export function LoginForm({
   className,
   ...props
 }: React.ComponentProps<"div">) {
-  const [email, setEmail] = useState("");
+  // const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [role, setRole] = useState("");
-  const [isLoading, setIsLoading] = useState(false)
+  // const [isLoading, setIsLoading] = useState(false)
   const [showPassword, setShowpassword] = useState(false)
-  const router = useRouter();
+  // const router = useRouter();
   return (
     <div className={cn("flex flex-col gap-6", className)} {...props}>
       <form>
