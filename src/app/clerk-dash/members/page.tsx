@@ -115,24 +115,24 @@ export default function MembersPage() {
             </div>
 
             {/* Search and Filter */}
-            {/* <Card>
+            <Card>
                 <CardContent className="pt-6">
-                <div className="flex flex-col sm:flex-row gap-4">
-                    <div className="relative flex-1">
-                    <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-gray-500" />
-                    <Input
-                        type="search"
-                        placeholder="Search clients..."
-                        className="pl-8"
-                    />
+                    <div className="flex flex-col sm:flex-row gap-4">
+                        <div className="relative flex-1">
+                            <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-gray-500" />
+                            <Input
+                                type="search"
+                                placeholder="Search clients..."
+                                className="pl-8"
+                            />
+                        </div>
+                        <Button variant="outline">
+                        <Filter className="mr-2 h-4 w-4" />
+                            Filter
+                        </Button>
                     </div>
-                    <Button variant="outline">
-                    <Filter className="mr-2 h-4 w-4" />
-                    Filter
-                    </Button>
-                </div>
                 </CardContent>
-            </Card> */}
+            </Card> 
 
 
             <div className="bg-white overflow-x-auto hover:shadow-xl transition rounded-xl border-t-1 border-green-500 shadow p-6">
@@ -158,8 +158,8 @@ export default function MembersPage() {
                             <td className="px-6 py-4 text-sm text-gray-900">{member.id}</td>
                             <td className="px-6 py-4 text-sm text-gray-900">{member.fullName}</td>
                             <td className="px-6 py-4 text-sm text-gray-900">
-                            <div className="flex items-center gap-1">📞 {member.phone}</div>
-                            <div className="flex items-center gap-1">📧 {member.email}</div>
+                                <div className="flex items-center gap-1">📞 {member.phone}</div>
+                                <div className="flex items-center gap-1">📧 {member.email}</div>
                             </td>
                             <td className="px-6 py-4 text-sm text-gray-900">{member.gender}</td>
                             <td className="px-6 py-4 text-sm text-gray-900">{member.type}</td>
@@ -187,28 +187,28 @@ export default function MembersPage() {
            {/* Pagination */}
             <div className="flex items-center justify-between mt-4">
                 <div className="text-sm text-gray-600">
-                Showing {indexOfFirstItem + 1} to {Math.min(indexOfLastItem, members.length)} of {members.length} entries
+                    Showing {indexOfFirstItem + 1} to {Math.min(indexOfLastItem, members.length)} of {members.length} entries
                 </div>
                 <div className="flex items-center gap-2">
-                <button
-                    disabled={currentPage === 1}
-                    onClick={() => setCurrentPage((prev) => prev - 1)}
-                    className="px-4 py-2 bg-gray-200 text-gray-700 rounded disabled:opacity-50"
-                >
-                    Previous
-                </button>
-                <span className="text-gray-600">
-                    Page {currentPage} of {totalPages}
-                </span>
-                <button
-                    disabled={currentPage === totalPages}
-                    onClick={() => setCurrentPage((prev) => prev + 1)}
-                    className="px-4 py-2 bg-gray-200 text-gray-700 rounded disabled:opacity-50"
-                >
-                    Next
-                </button>
-        </div>
-        </div>
+                    <button
+                        disabled={currentPage === 1}
+                        onClick={() => setCurrentPage((prev) => prev - 1)}
+                        className="px-4 py-2 bg-gray-200 text-gray-700 rounded disabled:opacity-50"
+                    >
+                        Previous
+                    </button>
+                    <span className="text-gray-600">
+                        Page {currentPage} of {totalPages}
+                    </span>
+                    <button
+                        disabled={currentPage === totalPages}
+                        onClick={() => setCurrentPage((prev) => prev + 1)}
+                        className="px-4 py-2 bg-gray-200 text-gray-700 rounded disabled:opacity-50"
+                    >
+                        Next
+                    </button>
+                </div>
+            </div>
         </div>
         
     );

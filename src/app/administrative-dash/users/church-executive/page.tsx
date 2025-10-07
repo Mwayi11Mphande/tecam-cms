@@ -4,9 +4,9 @@ import React, { useState } from 'react'
 
 // Mock data for demonstration
 const initialUsers = [
-  { id: 1, name: 'John Doe', email: 'john@company.com', role: 'Admin', status: 'Active', createdAt: '2024-01-15' },
-  { id: 2, name: 'Jane Smith', email: 'jane@company.com', role: 'Editor', status: 'Active', createdAt: '2024-01-20' },
-  { id: 3, name: 'Mike Johnson', email: 'mike@company.com', role: 'Viewer', status: 'Inactive', createdAt: '2024-02-01' },
+  { id: 1, name: 'John Doe', email: 'john@company.com', role: 'Fundraising', status: 'Active', createdAt: '2024-01-15' },
+  { id: 2, name: 'Jane Smith', email: 'jane@company.com', role: 'Building', status: 'Active', createdAt: '2024-01-20' },
+  { id: 3, name: 'Mike Johnson', email: 'mike@company.com', role: 'Sunday School', status: 'Inactive', createdAt: '2024-02-01' },
 ]
 
 export default function UsersPage() {
@@ -166,10 +166,10 @@ export default function UsersPage() {
                     onChange={(e) => setNewUser({...newUser, role: e.target.value})}
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
                   >
-                    <option value="Clerk">Church Clerk</option>
-                    <option value="Viewer">Decon</option>
+                    <option value="Clerk">Treasure</option>
+                    <option value="Viewer">Fundraising</option>
                     <option value="Editor">Treasure</option>
-                    <option value="Admin">Administrator</option>
+                    <option value="Admin">School project</option>
                   </select>
                 </div>
                 <div>

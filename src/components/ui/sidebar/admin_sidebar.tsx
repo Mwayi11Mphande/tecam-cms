@@ -121,7 +121,7 @@ export default function AdminSidebar() {
                 <Link href="/administrative-dash/finance/offerings" className="block px-4 py-2 rounded-lg hover:bg-blue-600">Offerings</Link>
                 <Link href="/administrative-dash/finance/donations" className="block px-4 py-2 rounded-lg hover:bg-blue-600">Donations</Link>
                 <Link href="/administrative-dash/finance/pledges" className="block px-4 py-2 rounded-lg hover:bg-blue-600">Pledges</Link>
-                <Link href="/administrative-dash/finance/expenses" className="block px-4 py-2 rounded-lg hover:bg-blue-600">Expenses</Link>
+                {/* <Link href="/administrative-dash/finance/expenses" className="block px-4 py-2 rounded-lg hover:bg-blue-600">Expenses</Link> */}
               </div>
             </li>
 
@@ -142,8 +142,8 @@ export default function AdminSidebar() {
                   eventsOpen ? "max-h-32" : "max-h-0"
                 }`}
               >
-                <Link href="administrative-dashn/church-bookings" className="block px-4 py-2 rounded-lg hover:bg-blue-600">All Events</Link>
-                <Link href="/administrative-dashevents/attendance" className="block px-4 py-2 rounded-lg hover:bg-blue-600">Event Attendance</Link>
+                <Link href="/administrative-dash/events/church-bookings" className="block px-4 py-2 rounded-lg hover:bg-blue-600">All Events</Link>
+                <Link href="/administrative-dash/events/Church-events" className="block px-4 py-2 rounded-lg hover:bg-blue-600">Church Bookings</Link>
               </div>
             </li>
 
@@ -155,7 +155,7 @@ export default function AdminSidebar() {
               >
                 <span className="flex items-center gap-3">
                   <UserCog className="h-5 w-5" />
-                  <span>Users</span>
+                  <span>Church Admini</span>
                 </span>
                 <ChevronDown className={`h-4 w-4 transition-transform ${usersOpen ? "rotate-180" : ""}`} />
               </button>
@@ -164,8 +164,8 @@ export default function AdminSidebar() {
                   usersOpen ? "max-h-32" : "max-h-0"
                 }`}
               >
-                <Link href="/administrative-dash/manage-users" className="block px-4 py-2 rounded-lg hover:bg-blue-600">Manage Users</Link>
-                <Link href="/administrative-dash/roles-permission" className="block px-4 py-2 rounded-lg hover:bg-blue-600">Roles & Permissions</Link>
+                <Link href="/administrative-dash/users/manage-users" className="block px-4 py-2 rounded-lg hover:bg-blue-600">Manage Users</Link>
+                <Link href="/administrative-dash/users/church-executive" className="block px-4 py-2 rounded-lg hover:bg-blue-600">Church Executive</Link>
               </div>
             </li>
 
