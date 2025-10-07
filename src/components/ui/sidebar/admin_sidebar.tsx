@@ -4,17 +4,14 @@ import Image from "next/image"
 import {
   Home,
   Users,
-  FileText,
   DollarSign,
   BarChart3,
   Settings,
   LogOut,
   ChevronDown,
   Calendar,
-  Shield,
   Menu,
   UserCog,
-  Database,
 } from "lucide-react"
 import { useState } from "react"
 import Link from "next/link"
@@ -194,13 +191,13 @@ export default function AdminSidebar() {
 
         {/* Logout */}
         <div className="px-4 py-4 border-t border-white">
-          <a
+          <Link
             href="/"
             className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-red-600 transition-all duration-200"
           >
             <LogOut className="h-5 w-5" />
             <span>Logout</span>
-          </a>
+          </Link>
         </div>
       </div>
 

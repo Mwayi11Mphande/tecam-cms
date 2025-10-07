@@ -64,31 +64,31 @@ export default function ClerkSidebar() {
         <nav className="flex-1 px-4 py-6">
           <ul className="space-y-3">
             <li>
-              <a
+              <Link
                 href="#"
                 className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-700 transition-all duration-200"
               >
                 <Home className="h-5 w-5" />
                 <span>Dashboard</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/clerk-dash/members"
                 className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-700 transition-all duration-200"
               >
                 <Users className="h-5 w-5" />
                 <span>Church Members</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#"
                 className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-700 transition-all duration-200"
               >
                 <Users className="h-5 w-5" />
                 <span>Church Attendance</span>
-              </a>
+              </Link>
             </li>
 
             <li>
@@ -137,53 +137,53 @@ export default function ClerkSidebar() {
                 </div>
             </li>
             <li>
-              <a
+              <Link
                 href="#"
                 className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-700 transition-all duration-200"
               >
                 <FileText className="h-5 w-5" />
                 <span>Church Programs</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#"
                 className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-700 transition-all duration-200"
               >
                 <BanknoteArrowUp className="h-5 w-5" />
                 <span>Manage Groups</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#"
                 className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-700 transition-all duration-200"
               >
                 <BarChart3 className="h-5 w-5" />
                 <span>Reports</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#"
                 className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-700 transition-all duration-200"
               >
                 <Settings className="h-5 w-5" />
                 <span>System Settings</span>
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
 
         {/* Logout */}
         <div className="px-4 py-4 border-t border-white">
-          <a
+          <Link
             href="/"
             className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-red-600 transition-all duration-200"
           >
             <LogOut className="h-5 w-5" />
             <span>Logout</span>
-          </a>
+          </Link>
         </div>
       </div>
       {/* Overlay for Mobile */}

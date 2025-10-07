@@ -1,7 +1,5 @@
 "use client";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import ClerkHeader from "@/components/ui/headers/clerk-header";
-import { BanknoteArrowUp, Group, BanknoteIcon, AlertCircle, Mail, Phone } from "lucide-react";
 import { useState } from "react";
 
 export default function MembersPage() {

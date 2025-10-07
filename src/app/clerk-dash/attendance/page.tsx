@@ -1,9 +1,7 @@
 "use client";
-import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import ClerkHeader from "@/components/ui/headers/clerk-header";
-import { Input } from "@/components/ui/input";
 import { BanknoteArrowUp, Group, BanknoteIcon, AlertCircle, Mail, Phone, Link, SlashIcon, Filter, Plus, Search } from "lucide-react";
 import { useState } from "react";
 

@@ -63,13 +63,13 @@ export default function TreasurerSidebar() {
         <nav className="flex-1 px-4 py-6">
           <ul className="space-y-3">
             <li>
-              <a
+              <Link
                 href="#"
                 className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-700 transition-all duration-200"
               >
                 <Home className="h-5 w-5" />
                 <span>Dashboard</span>
-              </a>
+              </Link>
             </li>
 
             {/* Finance Section */}
@@ -127,26 +127,26 @@ export default function TreasurerSidebar() {
 
             {/* Settings */}
             <li>
-              <a
+              <Link
                 href="#"
                 className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-700 transition-all duration-200"
               >
                 <Settings className="h-5 w-5" />
                 <span>System Settings</span>
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
 
         {/* Logout */}
         <div className="px-4 py-4 border-t border-white">
-          <a
+          <Link
             href="/"
             className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-red-600 transition-all duration-200"
           >
             <LogOut className="h-5 w-5" />
             <span>Logout</span>
-          </a>
+          </Link>
         </div>
       </div>
 

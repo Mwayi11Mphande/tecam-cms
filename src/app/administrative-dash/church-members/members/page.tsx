@@ -1,8 +1,7 @@
 "use client";
-import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import ClerkHeader from "@/components/ui/headers/clerk-header";
-import { BanknoteArrowUp, Group, BanknoteIcon, AlertCircle, Mail, Phone, Link, SlashIcon } from "lucide-react";
+import { BanknoteArrowUp, Group, BanknoteIcon, AlertCircle, } from "lucide-react";
 import { useState } from "react";
 
 export default function MembersPage() {
